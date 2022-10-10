@@ -4,8 +4,8 @@ import com.example.retrofittutorial.data.remote.RetrofitClient;
 import com.example.retrofittutorial.data.remote.SOService;
 
 public class ApiUtils {
-    public static final String Base_Url = "https://api.stackexchange.com/2.2";
-    public static SOService soService() {
+    public static final String Base_Url = "https://api.stackexchange.com/2.2/";
+    public static SOService getSOService() {
         return RetrofitClient.getClient(Base_Url).create(SOService.class);
     }
 }
